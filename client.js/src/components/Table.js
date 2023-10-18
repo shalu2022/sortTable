@@ -35,7 +35,7 @@ export default function CountryDataTable() {
 
   useEffect(() => {
     axios
-      .post(`http://localhost:5000/?sort=${sortBy}&&state=${state}`)
+      .post(`https://sort-table-7c81.vercel.app/?sort=${sortBy}&&state=${state}`)
       .then((res) => setTableData(res.data));
     navigate({
       pathname: "/",
